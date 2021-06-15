@@ -1,43 +1,74 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+<html lang="pl-Pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jakub Czucha">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/5864610d61.js" crossorigin="anonymous"></script>
+    <title>Projekt</title>
+</head>
+<body>
+    <nav class="navi">
+        <div class="navd">
+            <p class="firm-name">moja firma</p>
+        </div>
+        <div class="navd2">
+            <a href="#about"  class="navb">o nas</a>
+            <a href="#offer" class="navb">oferta</a>
+            <a href="contact" class="navb contactb">kontakt</a>
+        </div>
+    </nav>
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+    <section class="front-page">
+        <div class="cover">
+            <div class="cover-box">
+                <p class="h1t">Nasza firma oferuje najwyższej jakości produkty.</p>
+                <p class="h2t">Nie wierz nam na słowo - sprawdź</p>
+                <button class="offer-button">oferta</button>
+            </div>
+        </div>
+    </section>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+    <section class="about" id="about">
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+            <h1 class="h1t2">Nasi specjaliści</h1>
+
+        <div class="pack">
+            <div class="photo">
+                <img src="zdj1.jpg" class="img">
+            </div>
+            <div class="describe">
+                <h1 class="h1t3">Imie nazwisko [dział]</h1>
+                <h2 class="h2t2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime eos hic eius placeat ratione accusamus deserunt incidunt fugiat tempora et? Natus reprehenderit officia tempora. Assumenda mollitia ab voluptate officia repellendus.</h2>
+            </div>
+        </div>
+        <div class="pack">
+            <div class="photo">
+                <img src="zdj2.jpg" class="img">
+            </div>
+            <div class="describe">
+                <h1 class="h1t4">Imie nazwisko [dział]</h1>
+                <h2 class="h2t3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime eos hic eius placeat ratione accusamus deserunt incidunt fugiat tempora et? Natus reprehenderit officia tempora. Assumenda mollitia ab voluptate officia repellendus.</h2>
+            </div>
+        </div>
+    </section>
+
+    <section class="offer" id="root">
+    </section>
+
+    <footer>
+        <div class="foot">
+            <p class="foot-text">Nazwa firmy - wszelkie prawa zastrzeżone, 2021</p>
+        </div>
+        <div class="foot-icons">
+            <i class="fab fa-facebook-square"></i>
+            <i class="fab fa-instagram"></i>
+        </div>
+    </footer>
+
+</body>
 </html>
